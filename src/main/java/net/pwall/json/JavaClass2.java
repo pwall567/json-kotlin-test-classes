@@ -38,4 +38,6 @@ public class JavaClass2 {
 
     public List<List<JavaClass1>> field4 = null;
 
+    public List<List<? extends JavaClass1>> field5 = null;
+
 }
