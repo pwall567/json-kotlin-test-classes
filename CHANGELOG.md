@@ -2,6 +2,12 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [1.0] - 2020-04-19
+### Added
+- `ListEnum`: From `json-kotlin`
+- `TestAnnotatedClasses.kt`: From `json-kotlin`
+- `TestSealedClasses.kt`: From `json-kotlin`
+
 ## [0.2] - 2020-01-26
 ### Changed
 - `pom.xml`: Modified build

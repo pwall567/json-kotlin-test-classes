@@ -27,6 +27,7 @@ package net.pwall.json;
 
 public class JavaClass1 {
 
+    @SuppressWarnings("unused")
     public static final String description = "Test java class";
 
     private int field1;
@@ -44,18 +45,22 @@ public class JavaClass1 {
         this(0, null);
     }
 
+    @SuppressWarnings("unused")
     public int getField1() {
         return field1;
     }
 
+    @SuppressWarnings("unused")
     public void setField1(int field1) {
         this.field1 = field1;
     }
 
+    @SuppressWarnings("unused")
     public String getField2() {
         return field2;
     }
 
+    @SuppressWarnings("unused")
     public void setField2(String field2) {
         this.field2 = field2;
     }

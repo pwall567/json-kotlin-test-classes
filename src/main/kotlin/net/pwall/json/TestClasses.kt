@@ -29,14 +29,18 @@ import java.time.LocalDate
 
 data class Dummy1(val field1: String, val field2: Int = 999)
 
+@Suppress("unused")
 data class Dummy2(val field1: String, val field2: Int = 999) {
     var extra: String? = null
 }
 
+@Suppress("unused")
 data class Dummy3(val dummy1: Dummy1, val text: String)
 
+@Suppress("unused")
 data class Dummy4(val listDummy1: List<Dummy1>, val text: String)
 
+@Suppress("unused")
 data class DummyFromJSON(val int1: Int) {
 
     @Suppress("unused")
@@ -76,6 +80,7 @@ open class Super {
 
 }
 
+@Suppress("unused")
 class Derived : Super() {
 
     var field3: Double = 0.1
@@ -99,6 +104,7 @@ object DummyObject : DummyInterface {
 
 }
 
+@Suppress("unused")
 class NestedDummy {
 
     @Suppress("unused")
@@ -106,6 +112,7 @@ class NestedDummy {
 
 }
 
+@Suppress("unused")
 class DummyWithVal {
 
     val field8: String = "blert"
@@ -120,8 +127,10 @@ class DummyWithVal {
 
 }
 
+@Suppress("unused")
 class DummyList(content: List<LocalDate>) : ArrayList<LocalDate>(content)
 
+@Suppress("unused")
 class DummyMap(content: Map<String, LocalDate>) : HashMap<String, LocalDate>(content)
 
 open class DummyA
@@ -130,8 +139,10 @@ open class DummyB : DummyA()
 
 open class DummyC : DummyB()
 
+@Suppress("unused")
 class DummyD : DummyC()
 
+@Suppress("unused")
 data class Dummy9(val str: String) {
 
     override fun toString(): String {
