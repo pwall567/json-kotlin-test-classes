@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.pwall.json</groupId>
   <artifactId>json-kotlin-test-classes</artifactId>
-  <version>1.1</version>
+  <version>1.1.1</version>
   <name>Test classes for json-kotlin, json-ktor etc.</name>
   <packaging>jar</packaging>
   <url>https://github.com/pwall567/json-kotlin-test-classes</url>
@@ -13,7 +13,7 @@
   <parent>
     <groupId>net.pwall.maven</groupId>
     <artifactId>maven-kotlin</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
   </parent>
 
   <properties>
@@ -52,7 +52,7 @@
     <dependency>
       <groupId>net.pwall.json</groupId>
       <artifactId>json-kotlin-annotations</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
     </dependency>
     <dependency>
       <groupId>net.pwall.json</groupId>
