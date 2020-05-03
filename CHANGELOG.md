@@ -2,6 +2,10 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [1.2] - Unreleased
+### Changed
+- `TestClasses.kt`: added `DummyMultipleFromJSON`, `TestStringList`, `TestListEntry`
+
 ## [1.1.1] - 2020-04-19
 ### Changed
 - `pom.xml`: updated dependency versions

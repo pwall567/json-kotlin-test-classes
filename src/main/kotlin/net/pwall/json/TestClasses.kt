@@ -63,6 +63,35 @@ data class DummyFromJSON(val int1: Int) {
 }
 
 @Suppress("unused")
+data class DummyMultipleFromJSON(val int1: Int) {
+
+    @Suppress("unused")
+    fun toJSON(): JSONObject {
+        return JSONObject.create().putValue("dec", int1.toString()).putValue("hex", int1.toString(16))
+    }
+
+    companion object {
+        @Suppress("unused")
+        fun fromJSON(json: JSONObject): DummyMultipleFromJSON {
+            val dec = json.getString("dec").toInt()
+            val hex = json.getString("hex").toInt(16)
+            if (dec != hex)
+                throw JSONException("Inconsistent values")
+            return DummyMultipleFromJSON(dec)
+        }
+        @Suppress("unused")
+        fun fromJSON(json: JSONInteger): DummyMultipleFromJSON {
+            return DummyMultipleFromJSON(json.get())
+        }
+        @Suppress("unused")
+        fun fromJSON(json: JSONString): DummyMultipleFromJSON {
+            return DummyMultipleFromJSON(json.get().toInt(16))
+        }
+    }
+
+}
+
+@Suppress("unused")
 enum class DummyEnum { ALPHA, BETA, GAMMA }
 
 open class Super {
@@ -150,3 +179,9 @@ data class Dummy9(val str: String) {
     }
 
 }
+
+@Suppress("unused")
+data class TestStringList(val list: List<String>)
+
+@Suppress("unused")
+data class TestListEntry(val number: Int, val text: String)
