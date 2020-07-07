@@ -2,6 +2,10 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [1.3.1] - 2020-07-07
+### Changed
+- `pom.xml`: updated dependency versions
+
 ## [1.3] - 2020-07-07
 ### Changed
 - `TestClasses.kt`: added `Dummy5`
