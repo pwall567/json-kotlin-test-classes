@@ -41,6 +41,9 @@ data class Dummy3(val dummy1: Dummy1, val text: String)
 data class Dummy4(val listDummy1: List<Dummy1>, val text: String)
 
 @Suppress("unused")
+data class Dummy5(val field1: String?, val field2: Int)
+
+@Suppress("unused")
 data class DummyFromJSON(val int1: Int) {
 
     @Suppress("unused")

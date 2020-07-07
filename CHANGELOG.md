@@ -2,7 +2,11 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
-## [1.2] - Unreleased
+## [1.3] - 2020-07-07
+### Changed
+- `TestClasses.kt`: added `Dummy5`
+
+## [1.2] - 2020-05-03
 ### Changed
 - `TestClasses.kt`: added `DummyMultipleFromJSON`, `TestStringList`, `TestListEntry`
 
