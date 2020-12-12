@@ -2,6 +2,11 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [1.4.1] - 2020-09-16
+### Changed
+- moved Java classes to same directory as Kotlin (for sources jar)
+- added Travis
+
 ## [1.4] - 2020-09-16
 ### Changed
 - `pom.xml`: updated version of parent POM - switch to Kotlin 1.4.0
