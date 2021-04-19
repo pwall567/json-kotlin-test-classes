@@ -2,6 +2,10 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [1.6] - 2021-04-19
+### Changed
+- `pom.xml`: updated dependency
+
 ## [1.5] - 2020-12-13
 ### Added
 - `TestDeserialization.kt`

@@ -84,11 +84,11 @@ data class DummyMultipleFromJSON(val int1: Int) {
         }
         @Suppress("unused")
         fun fromJSON(json: JSONInteger): DummyMultipleFromJSON {
-            return DummyMultipleFromJSON(json.get())
+            return DummyMultipleFromJSON(json.value)
         }
         @Suppress("unused")
         fun fromJSON(json: JSONString): DummyMultipleFromJSON {
-            return DummyMultipleFromJSON(json.get().toInt(16))
+            return DummyMultipleFromJSON(json.value.toInt(16))
         }
     }
 
